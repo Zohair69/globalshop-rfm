@@ -218,3 +218,4 @@ __marimo__/
 .streamlit/secrets.toml
 data/raw/*.csv
 data/raw/*.xlsx
+data/processed/online_retail_clean.csv
