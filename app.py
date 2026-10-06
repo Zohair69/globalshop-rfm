@@ -29,7 +29,7 @@ def charger_modeles():
 
 scaler, modele, dicos = charger_modeles()
 
-st.set_page_config(page_title="Le radar client de GlobalShop Direct", page_icon="🛒")
+st.set_page_config(page_title="Le radar client - GlobalShop Direct", page_icon="🛒")
 
 st.title("Le radar client de GlobalShop Direct")
 st.write(
@@ -73,4 +73,3 @@ if st.button("Trouver le segment", type="primary"):
         """,
         unsafe_allow_html=True,
     )
-    st.caption("Cluster K-Means n° " + str(cluster))
