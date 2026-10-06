@@ -35,7 +35,7 @@ if st.button("Trouver le segment"):
     # Même chemin que dans le notebook : log1p, standardisation, prédiction
     client = pd.DataFrame({"recence": [recence], "frequence": [frequence], "montant": [montant]})
     client_log = np.log1p(client)
-    client_standardise = scaler.transform(client_log)
+    client_standardise = pd.DataFrame(scaler.transform(client_log), columns=client.columns)
     cluster = modele.predict(client_standardise)[0]
 
     segment = dicos["noms_segments"][cluster]
